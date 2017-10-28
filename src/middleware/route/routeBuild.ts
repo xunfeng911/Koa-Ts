@@ -2,7 +2,6 @@ import * as Router from "koa-router";
 import { routeManage } from './routeManager';
 import { route } from './decorator';
 import * as cls from 'colors';
-import * as logger from 'koa-logger';
 
 
 

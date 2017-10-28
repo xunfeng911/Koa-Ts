@@ -7,6 +7,14 @@ const config: KoaConfig = {
     key: 'xuncs',
     time: '1d',
     debug: true,
+  },
+  mongo: {
+    host: 'mongodb://127.0.0.1:27017/test'
+  },
+  redis: {
+    host: 'localhost',
+    port: '6379',
+    db: 1
   }
 }
 
