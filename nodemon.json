@@ -10,8 +10,9 @@
   ],
   "verbose": true,
   "execMap": {
-    "": "node",
-    "js": "node --harmony"
+    "": "ts-node",
+    "js": "node --harmony",
+    "ts": "ts-node --harmony"
   },
   "events": {
     "restart": "osascript -e 'display notification \"App restarted due to:\n'$FILENAME'\" with title \"nodemon\"'"
@@ -19,6 +20,6 @@
   "watch": [
     "build/"
   ],
-  "ext": "js json",
+  "ext": "ts js json",
   "legacy-watch": false
 }
