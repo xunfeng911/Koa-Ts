@@ -3,7 +3,7 @@ import * as _ from 'lodash';
 class BaseClass {
   idList: Array<string>;
   constructor() {
-    this.idList = ['u_id', 'i_id'];
+    this.idList = ['b_id'];
   }
   // id 自增
   async getId(type: string) {

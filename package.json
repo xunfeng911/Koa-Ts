@@ -20,6 +20,7 @@
     "@types/lodash": "^4.14.78",
     "@types/log4js": "^2.3.5",
     "@types/mongoose": "^4.7.24",
+    "@types/mysql": "^2.15.0",
     "@types/redis": "^2.6.1",
     "jsonwebtoken": "^8.1.0",
     "kcors": "^2.2.1",
@@ -31,6 +32,7 @@
     "lodash": "^4.17.4",
     "log4js": "^2.3.7",
     "mongoose": "^4.12.4",
+    "mysql": "^2.15.0",
     "redis": "^2.8.0"
   },
   "devDependencies": {

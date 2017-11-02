@@ -127,6 +127,12 @@
     "@types/mongodb" "*"
     "@types/node" "*"
 
+"@types/mysql@^2.15.0":
+  version "2.15.0"
+  resolved "http://registry.npm.taobao.org/@types/mysql/download/@types/mysql-2.15.0.tgz#838831f26938c354a942d774478037ec9cfafde4"
+  dependencies:
+    "@types/node" "*"
+
 "@types/node@*", "@types/node@^8.0.45":
   version "8.0.45"
   resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-8.0.45.tgz#89fad82439d5624e1b5c6b42f0f5d85136dcdecc"
@@ -248,6 +254,10 @@ bcrypt-pbkdf@^1.0.0:
   resolved "http://registry.npm.taobao.org/bcrypt-pbkdf/download/bcrypt-pbkdf-1.0.1.tgz#63bc5dcb61331b92bc05fd528953c33462a06f8d"
   dependencies:
     tweetnacl "^0.14.3"
+
+bignumber.js@4.0.4:
+  version "4.0.4"
+  resolved "http://registry.npm.taobao.org/bignumber.js/download/bignumber.js-4.0.4.tgz#7c40f5abcd2d6623ab7b99682ee7db81b11889a4"
 
 bl@~1.1.2:
   version "1.1.2"
@@ -1185,6 +1195,15 @@ muri@1.3.0:
   version "1.3.0"
   resolved "http://registry.npm.taobao.org/muri/download/muri-1.3.0.tgz#aeccf3db64c56aa7c5b34e00f95b7878527a4721"
 
+mysql@^2.15.0:
+  version "2.15.0"
+  resolved "http://registry.npm.taobao.org/mysql/download/mysql-2.15.0.tgz#ea16841156343e8f2e47fc8985ec41cdd9573b5c"
+  dependencies:
+    bignumber.js "4.0.4"
+    readable-stream "2.3.3"
+    safe-buffer "5.1.1"
+    sqlstring "2.3.0"
+
 negotiator@0.6.1:
   version "0.6.1"
   resolved "http://registry.npm.taobao.org/negotiator/download/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
@@ -1380,7 +1399,7 @@ readable-stream@1.1.x:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-readable-stream@2, readable-stream@^2.3.0:
+readable-stream@2, readable-stream@2.3.3, readable-stream@^2.3.0:
   version "2.3.3"
   resolved "http://registry.npm.taobao.org/readable-stream/download/readable-stream-2.3.3.tgz#368f2512d79f9d46fdfc71349ae7878bbc1eb95c"
   dependencies:
@@ -1508,7 +1527,7 @@ resolve-from@^2.0.0:
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/resolve-from/download/resolve-from-2.0.0.tgz#9480ab20e94ffa1d9e80a804c7ea147611966b57"
 
-safe-buffer@^5.0.1, safe-buffer@^5.1.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
+safe-buffer@5.1.1, safe-buffer@^5.0.1, safe-buffer@^5.1.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
   resolved "http://registry.npm.taobao.org/safe-buffer/download/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
@@ -1596,6 +1615,10 @@ source-map@^0.6.0:
 source-map@~0.5.6:
   version "0.5.7"
   resolved "http://registry.npm.taobao.org/source-map/download/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
+
+sqlstring@2.3.0:
+  version "2.3.0"
+  resolved "http://registry.npm.taobao.org/sqlstring/download/sqlstring-2.3.0.tgz#525b8a4fd26d6f71aa61e822a6caf976d31ad2a8"
 
 sshpk@^1.7.0:
   version "1.13.1"

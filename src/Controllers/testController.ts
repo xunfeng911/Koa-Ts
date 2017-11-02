@@ -1,13 +1,10 @@
 import {Context} from 'koa';
 import { GET, routePrefix, required } from '../middleware/route/decorator';
-import { signToken } from '../middleware/auth';
-import BaseClass from '../Util/BaseClass';
 
 @routePrefix("/home")
-export class TestController extends BaseClass {
+export class TestController {
 
   constructor() {
-    super();
     console.log("create new instance home");
   }
 
@@ -19,15 +16,6 @@ export class TestController extends BaseClass {
       query: ctx.query,
       message: "hello"
     };
-  }
-
-  @GET("login")
-  @required({query: ['username', 'userid']})  
-  async login(ctx: Context): Promise<void> {
-    ctx.body = {
-      token: signToken(ctx.query.userid),
-      username: ctx.query.username
-    }
   }
  }
 

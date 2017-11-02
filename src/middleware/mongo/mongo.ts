@@ -1,21 +1,17 @@
 import * as Mongoose from "mongoose";
 import { XUser, UserModel } from '../../Models/user/index';
 
-//mongo入参
 export interface DbConfig {
     host: string,
     user ?: string,
     pwd ?: string
 }
 
-// mongo绑定model
 export interface Database {
     userModel: Mongoose.Model<XUser>;
 }
 
-//连接mongo
 export function init(config: DbConfig) {
-    //mongo设置promise
     (<any>Mongoose).Promise = global.Promise;
     const options = {
         useMongoClient: true,
