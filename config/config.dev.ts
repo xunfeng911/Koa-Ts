@@ -9,7 +9,7 @@ const config: KoaConfig = {
     debug: true,
   },
   mongo: {
-    host: 'mongodb://123.207.98.46:27017/test'
+    host: 'mongodb://127.0.0.1:27017/test'
   },
   redis: {
     host: 'localhost',

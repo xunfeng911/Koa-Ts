@@ -1,5 +1,6 @@
 # Logs
 logs
+log
 *.log
 npm-debug.log*
 
@@ -32,7 +33,7 @@ jspm_packages
 
 # Optional npm cache directory
 .npm
-
+./log
 # Optional REPL history
 .node_repl_history
 
