@@ -22,10 +22,13 @@ export class RouteBuild {
         if (!path.startsWith("/")) {
           path = prefix + path;
         }
-        
-        routeInfo.middleware.forEach(itm => {
-          this._router[pathInfo.method.toLowerCase()](path, itm);
-        });
+        if (typeof routeInfo.middleware == 'function') {
+          this._router[pathInfo.method.toLowerCase()](path, routeInfo.middleware);
+        } else {
+          routeInfo.middleware.forEach(itm => {
+            this._router[pathInfo.method.toLowerCase()](path, itm);
+          });
+        }
         console.log(cls.green(`${pathInfo.method}: ${path}`));
       }
       this._built = true;
